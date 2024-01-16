@@ -41,13 +41,6 @@ type = web
 repo = fluidd-core/fluidd
 path = ~/fluidd
 
-[update_manager client z_calibration]
-type = git_repo
-path = ~/klipper_z_calibration
-origin = https://github.com/protoloft/klipper_z_calibration.git
-install_script = install.sh
-managed_services = klipper
-
 [update_manager KlipperScreen]
 type = git_repo
 path = ~/KlipperScreen
@@ -69,5 +62,11 @@ install_script = scripts/install.sh
 type = git_repo
 path = ~/klipper-led_effect
 origin = https://github.com/julianschill/klipper-led_effect.git
+is_system_service = False
+
+[update_manager Katapult]
+type = git_repo
+path = ~/katapult
+origin = https://github.com/Arksine/katapult.git
 is_system_service = False
 
